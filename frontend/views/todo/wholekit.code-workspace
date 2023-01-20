@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "wholekit",
+			"path": "../../../.."
+		},
+		{
+			"name": "django-revenge",
+			"path": "../../../../../TEST_ASSESMENT/django-revenge"
+		},
+		{
+			"name": "code-mc",
+			"path": "../../../../../mcpayment/code-mc"
+		},
+		{
+			"name": "docker",
+			"path": "../../../../../MajapahitCode/Eksternal/docker"
+		},
+		{
+			"name": "helm",
+			"path": "../../../../../MajapahitCode/Eksternal/helm"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

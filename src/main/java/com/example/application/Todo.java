@@ -2,58 +2,41 @@ package com.example.application;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.validation.constraints.NotBlank;
+
 import com.vaadin.flow.component.template.Id;
+
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 public class Todo {
     
     @Id
+    @Getter
+    @Setter
     @GeneratedValue
-    private Long id;
+    private Integer id;
+
+    @Getter
+    @Setter
+    @NotBlank 
     private String task;
+
+    @Getter
+    @Setter
+    @NotBlank 
     private String deskripsi;
-    private boolean done;
+
+    @Setter
+    @Getter
+    private boolean done = false;
 
     public Todo() {
     }
 
-    public Todo(Long id, String task, String deskripsi, boolean done) {
-        this.id = id;
+    public Todo(String task, String deskripsi) {
         this.task = task;
         this.deskripsi = deskripsi;
-        this.done = done;
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTask() {
-        return task;
-    }
-
-    public void setTask(String task) {
-        this.task = task;
-    }
-
-    public String getDeskripsi() {
-        return deskripsi;
-    }
-
-    public void setDeskripsi(String deskripsi) {
-        this.deskripsi = deskripsi;
-    }
-
-    public boolean isDone() {
-        return done;
-    }
-
-    public void setDone(boolean done) {
-        this.done = done;
-    }
-
 }
